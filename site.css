@@ -1,8 +1,8 @@
 body{
-	background-color:white/*#900C3F*/;
+	background-color:white;
 	height:100%:;
 	margin:0px;
-	font-family:Verdana,sans-serif;
+	font-family:Economica,Verdana,sans-serif;
 	font-size:15px;
 	line-height:1.5;
 }
@@ -139,3 +139,32 @@ hr#solo{
 .content#home{text-align:center}
 
 .liste>li{margin-bottom:15px;}
+
+.fixed-width{
+	width: 940px;
+	margin: 0 auto;
+}
+
+.page-footer{
+	background-color: #f4f4f4;
+	color: #9b9b9b;
+	font-size: 1rem;
+	height: 70px;
+}
+
+.page-footer .copyright{
+	float: left;
+}
+
+.page-footer .credits {
+	float: right;	
+}
+
+.page-footer .credits em{
+	font-weight: bold;
+}
+
+.page-footer-content{
+	padding-top: 1.4em;
+	
+}
