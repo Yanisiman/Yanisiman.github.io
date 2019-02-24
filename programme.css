@@ -1,6 +1,6 @@
 table {
-	width: 75%;
-	margin: auto;
+	position:relative;
+	width: 900px;
 	border-collapse: collapse;
 	margin-bottom: 20px; 
 }
@@ -11,7 +11,6 @@ table, td, th {
 
 th, td {
 	padding: 10px;
-	text-align: left;
 }
 
 th, .sub-topic {
@@ -22,4 +21,16 @@ th, .sub-topic {
 
 tr:nth-child(even){
 	background-color: #f2f2f2;
+}
+
+.body{
+	padding-top:40px;
+	width: 905px;
+	margin: auto;
+}
+hr{
+	margin-top:0px;	
+	margin-left:0px;
+	border-top:1px dotted #900C3F;
+	width:50%;
 }

@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<link rel="icon" type="image/png" href="images/icon.png" />
 	<link rel="stylesheet" href="site.css"/>
-	<title>Problèmes</title>
+	<title>FIG - Problèmes</title>
 </head>
 <body>
 
@@ -26,18 +26,27 @@
 		</div>
 
 	<!--?php include("menu.php"); ?!-->
-
+	<div class="content">
 	<header>
 		<h1>Problèmes et Solutions</h1>
+		<hr/>
 	</header>
-
-	<h2>Problèmes rencontrés</h2>
-
-	<p></p>
-
-	<h2>Solutions envisagées</h2>
-
-	<p></p>
+	
+	<table >
+	<tr id="prob">
+	<td><h2>Problèmes rencontrés</h2></td>
+	<td><h2>Solutions envisagées</h2></td>
+	</tr>
+	<tr id="prob">
+	<td>L’utilisation de git en équipe : Nous avions tous été formé à git à travers nos nombreux tpde programmation mais l’utilisation de git en équipe de plusieurs 
+	personnes est évidemmentdifférent. Il a donc fallu faire des branches pour que chacun puisse travailler sur les différentesparties qui lui incombaient. 
+	Cependant il fallait très souvent gérer les nombreux conflits lorsquel’on voulait merge (faire une mise en commun dans la branche principale). Ces nombreux 
+	conflitsétant relatifs à de petites différences lorsque l’on travaillait sur les mêmes scènes unity étaienttrès dures à gérer.</td>
+	<td>Nous avons donc décidé de mieux gérer ses conflits en gardant l’idée dechacun travaille sur une branche mais en même temps chacun travaille sur une 
+	scène différenteen récupérant les travaux faits par les autres à chaque fois que quelqu’un comptait travaillersur l’un de ces scènes.</td>
+	</tr>
+	</table>
+	</div>
 
 	<!--?php include("footer.php"); ?!-->
 </body>
