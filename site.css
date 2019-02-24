@@ -187,7 +187,7 @@ a:active {
 }
 
 /**** PROBLEMES *****/
-table{
+#tab_prob{
 	border-collapse: collapse;
 	border-radius:15px;
 	overflow:hidden;
