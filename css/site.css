@@ -64,7 +64,7 @@ img{
 }
 
 #logo{
-	background-image:url("images/ban1.jpg"), url("images/ban2.jpg");
+	background-image:url("../images/ban1.jpg"), url("../images/ban2.jpg");
 	background-repeat:no-repeat;
 	background-position:left, right;
 	background-color:white;
