@@ -26,11 +26,63 @@ tr:nth-child(even){
 .body{
 	padding-top:40px;
 	width: 905px;
-	margin: auto;
+	margin: auto;	
+	overflow:hidden;
 }
 hr{
 	margin-top:0px;	
 	margin-left:0px;
 	border-top:1px dotted #900C3F;
 	width:50%;
+}
+
+.maj>img{
+	display:inline-block;
+	height: 350px;
+	padding:0px 20px 20px 0px;
+}
+
+#long{
+	position:relative;
+	left:-10%;
+}
+#up{
+	width:50px;	
+	padding-top:5px;
+}
+
+#button{
+	text-align:center;
+	position:fixed;
+	bottom:10px;
+	right:60px;	
+	width:55px;
+	border-radius:10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin:20px;
+	opacity:0.5;
+	transition:0.25s;
+}
+
+#button:hover{
+	opacity:1;
+	transform:scale(1.05);
+}
+
+#button:active{
+	transition:0.2s;
+	transform:scale(1.25);
+}
+
+a{
+	color: white;
+	text-decoration:none;
+}
+
+a:hover {
+	color: white;
+}
+
+a:active {
+	color: red;
 }

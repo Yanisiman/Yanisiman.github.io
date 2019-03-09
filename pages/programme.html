@@ -27,11 +27,12 @@
 		</div>
 
 	<!--?php include("menu.php"); ?!-->
-
+	<a id="start"><div class="body"></a>
 	<header>
 		<h1>Cahier des Charges</h1>
+		<hr/>
 	</header>
-
+	<a href="#start"><div id="button"><img id="up" src="../images/up.PNG"></div></a>
 	<h2>Répartition</h2>
 
 	<div style="overflow-x:auto;">
@@ -137,18 +138,17 @@
 			</tbody>
 		</table>
 	</div>
-
+	
 
 	<h2>Avancement</h2>
-
 	<div style="overflow-x:auto;">
 		<table>
 			<thead>
 			<tr>
 				<th>Tâches / Soutenance</th>
-				<th>Soutenance 1</th>
-				<th>Soutenance 2</th>
-				<th>Soutenance 3</th>
+				<th><a href="#1s">Soutenance 1</a></th>
+				<th><a href="#2s">Soutenance 2</a></th>
+				<th><a href="#3s">Soutenance 3</a></th>
 			</tr>
 			</thead>
 
@@ -246,18 +246,19 @@
 		</table>
 	</div>
 
-	<h1>Mises à jour</h1>
+	<a id="1s"><h1>Première soutenance (14/03/19)</h1></a>
+	<hr/>
 	<h2>Les Menus</h2>
-	
+	<div class="maj">
 	<img src="../images/maj/menu.png">
 	<img src="../images/maj/options.png">
 	<img src="../images/maj/connect.png">
 	<img src="../images/maj/createroom.png">
 	<img src="../images/maj/room.png">
-	<img src="../images/maj/gif/menu.gif">
-
+	<img id="long" src="../images/maj/gif/menu.gif">
+	</div>
 	<h2>La génération procédurale</h2>
-
+	<div class="maj">
 	<img src="../images/maj/firstGen.png">
 	<img src="../images/maj/gen.png">
 	<img src="../images/maj/gen2.png">
@@ -265,25 +266,27 @@
 	<img src="../images/maj/lookat.png">
 	<img src="../images/maj/finalgen.png">
 	<img src="../images/maj/gif/loadingLevel.gif">
-
+	</div>
 	<h2>Le pathfinding</h2>
-
+	<div class="maj">
 	<img src="../images/maj/gif/pathfindingHeight.gif">
 	<img src="../images/maj/gif/organicOpacity.gif">
-
+	</div>
 	<h2>L'inventaire</h2>
-
+	<div class="maj">
 	<img src="../images/maj/gif/inventAdapted.gif">
 	<img src="../images/maj/gif/inventoryTry.gif">
-
+	</div>
 	<h2>Autres</h2>
-
+	<div class="maj">
 	<img src="../images/maj/gif/selectTest.gif">
 	<img src="../images/maj/gif/selectTestMulti.gif">
 	<img src="../images/maj/gif/firstAnimationTest.gif">
 	<img src="../images/maj/gif/permissionShowcase.gif">
 	<img src="../images/maj/gif/field_of_view.gif">
-
+	</div>
+	</div>
+	
 	<!--?php include("footer.php"); ?!-->
 </body>
 </html>
