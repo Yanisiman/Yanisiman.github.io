@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<link rel="icon" type="image/png" href="../images/icon.png" />
 	<link rel="stylesheet" href="../css/site.css"/>
+	<link rel="stylesheet" href="../css/problemes.css"/>
 	<title>FIG - Problèmes</title>
 </head>
 <body>
@@ -33,21 +34,35 @@
 	</header>
 	
 	<table id="tab_prob">
-	<tr id="prob">
+	<tr class="prob">
 	<td><h2>Problèmes rencontrés</h2></td>
 	<td><h2>Solutions envisagées</h2></td>
 	</tr>
-	<tr id="prob">
-	<td>L’utilisation de git en équipe : Nous avions tous été formé à git à travers nos nombreux tpde programmation mais l’utilisation de git en équipe de plusieurs 
-	personnes est évidemmentdifférent. Il a donc fallu faire des branches pour que chacun puisse travailler sur les différentesparties qui lui incombaient. 
-	Cependant il fallait très souvent gérer les nombreux conflits lorsquel’on voulait merge (faire une mise en commun dans la branche principale). Ces nombreux 
-	conflitsétant relatifs à de petites différences lorsque l’on travaillait sur les mêmes scènes unity étaienttrès dures à gérer.</td>
-	<td>Nous avons donc décidé de mieux gérer ses conflits en gardant l’idée dechacun travaille sur une branche mais en même temps chacun travaille sur une 
-	scène différenteen récupérant les travaux faits par les autres à chaque fois que quelqu’un comptait travaillersur l’un de ces scènes.</td>
+	<tr class="prob">
+	<td>L’utilisation de git en équipe : Nous avions tous été formé à git à travers nos nombreux TPs de programmation mais l’utilisation de git en équipe de plusieurs personnes est évidemment différente. Il a donc fallu faire des branches pour que chacun puisse travailler sur les différentes parties qui lui incombaient. 
+	Cependant il fallait très souvent gérer les nombreux conflits lorsque l’on voulait merge (faire une mise en commun dans la branche principale). Ces nombreux conflits étant relatifs à de petites différences lorsque l’on travaillait sur les mêmes scènes unity étaient très dures à gérer.</td>
+	<td>Nous avons donc décidé de mieux gérer ces conflits en gardant l’idée que chacun travaille sur une branche mais en même temps chacun travaille sur une scène différente en récupérant les travaux faits par les autres à chaque fois que quelqu’un comptait travailler sur l’un de ces scènes.</td>
+	</tr>
+	<tr class="prob">
+		<td>Un autre problème a été avec la génération procédurale. En effet le système utilisé était trop lourd pour Photon qui devait instancier cette génération procédurale pour chaque joueur. 
+		</td>
+		<td>La solution trouvée a été de faire cette génération juste sur le "masterclient" et qui crypte la génération et envoie les informations de cette génération grâce à un array à travers d'une méthode RPC (définir RPC) et ensuite le joueur recevant ces informations les décrypte et génère ainsi la même génération procédurale.</td>
+	</tr>
+
+	<tr class="prob">
+		<td>Problème lors de l'adaptation au modèle 3D du personnage et son animation. Avant d'importer ces derniers éléments on utilisait des cubes pour imiter des joueurs, on pouvait alors les faire se déplacer. Mais à partir du moment où l'on a remplacé ces cubes par les modèles 3D des personnages et leur animations cela ne marchait plus correctement.</td>
+		<td></td>
 	</tr>
 	</table>
 	</div>
 
 	<!--?php include("footer.php"); ?!-->
+<footer class="page-footer">
+	<div class="page-footer-content fixed-width">
+		<small class="">&copy; FILIGA INSPIRATION GAMES</small>
+		<small class="credits"> Site développé par <em>Yanis & Jordan</em></small>
+	</div>
+</footer>
+	
 </body>
 </html>
