@@ -1,11 +1,16 @@
 table {
-	position:relative;
-	width: 900px;
+	display:inline-block;
+	width: 435px;
 	border-collapse: collapse;
-	margin-bottom: 20px; 
+	margin-bottom: 20px;
 }
 
-table, td, th {
+#t2{	
+	position:absolute;
+	padding-left:5px;
+}
+
+td, th {
   border: 1px solid black;
 }
 
@@ -29,17 +34,29 @@ tr:nth-child(even){
 	margin: auto;	
 	overflow:hidden;
 }
-hr{
-	margin-top:0px;	
-	margin-left:0px;
-	border-top:1px dotted #900C3F;
-	width:50%;
-}
 
 .maj>img{
-	display:inline-block;
+	height:350px;
+	padding:10px 0px 20px 0px;
+	
+}
+
+.carre>img{
+	height:240px;
+	padding-bottom:20px;
+}
+.carre>div>img{
 	height: 350px;
-	padding:0px 20px 20px 0px;
+	padding-top:10px;
+}
+.carre>div{
+	display:inline-block;
+	width:449px;
+	padding-bottom:20px;
+}
+
+.caption{
+	margin:0px;
 }
 
 #long{
@@ -57,6 +74,7 @@ hr{
 	bottom:10px;
 	right:60px;	
 	width:55px;
+	background-color:white;
 	border-radius:10px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	margin:20px;
@@ -70,16 +88,11 @@ hr{
 }
 
 #button:active{
-	transition:0.2s;
-	transform:scale(1.25);
+	transition:0.1s;
+	transform:scale(1);
 }
 
 a{
-	color: white;
-	text-decoration:none;
-}
-
-a:hover {
 	color: white;
 }
 
