@@ -25,6 +25,18 @@
         position: relative;
     }
 
+    #menu>ul>li {
+        float: none;
+    }
+
+    .icon>a>img{
+        display: none;
+    }
+
+    #menu>ul>li a {
+        margin-left: -100px;
+    }
+
     .logo{
         width: 30px;
     }
@@ -35,5 +47,17 @@
 
     #logiciel>td{
         padding-left:10px;
+    }
+
+    .mySlides{
+        width: 90%;
+    }
+
+    .body{
+        width: 90%;
+    }
+
+    #t2{
+        position: relative;
     }
 }
