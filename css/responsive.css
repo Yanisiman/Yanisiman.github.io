@@ -9,8 +9,13 @@
         font-size: 11px;
     }
 
-    #menu>ul>li a {
+    .content-small{
+        width: 90%;
         font-size: 15px;
+    }
+
+    #menu>ul>li a{
+        font-size: 30px !important;
     }
 
     .fixed-width{
