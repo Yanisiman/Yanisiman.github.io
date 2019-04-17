@@ -1,34 +1,52 @@
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="icon" type="image/png" href="images/icon.png" />
-<link rel="stylesheet" href="css/site.css"/>
-<meta charset="utf-8"/>
-<title>FIG</title>
-</head>
-<body>
+<!-- Il s'agit de la page sur laquelle on tombe lorsque l'on arrive sur le site. Il s'agit d'un formulaire pour s'inscrire à notre site afin de pouvoir découvrir les autres pages du site en étant redirigé vers la page d'accueil du site -->
+<?php
 
-<?php include("php/pages/header.php"); ?>
+session_start();
 
-<div class="content" id="home">
+// Connexion à la base de données
+try
+{
+	$bdd = new PDO('mysql:host=localhost; dbname=yanis; charset=utf8', 'yanis', 'yanicha25');
+}
+catch(Exception $e) // Si la connexion à la base de données échoue, un message d'erreur s'affiche alors
+{
+        die('Erreur : '.$e->getMessage());
+}
 
-<div class="paragraph">
-<p>Bienvenue sur le site officiel de TotA, où vous pouvez trouver de nombreuses informations sur le jeu, l'équipe de développeurs, mais aussi sur les différents moyens d'obtenir le jeu et les annexes inhérentes à ce dernier.
-<br/>
-Tales of the Apocalypse est un jeu vidéo en 3D visant à recréer une expérience d’un groupe de survivants lors d’une apocalypse. Le joueur aura alors 
-le contrôle total de l’ensemble des membres du groupe et aura pour tâche de les faire survivre. Chaque survivant est unique et possède des traits, 
-des compétences et des caractéristiques propre à lui représentant ses forces et ses faiblesses. TotA n’est ni un jeu de stratégie compétitif ni un simulateur, 
-mais est avant tout un générateur d’histoire, ainsi l’intérêt premier du jeu n’est pas de gagner mais d’assister aux différents événements, qu’ils soient épiques, 
-comiques, tragiques ou dramatiques, vécus par le groupe de survivants.</p>
-</div>
+// Si il existe des variables provenant d'un formulaire envoyées avec la méthode "post", alors:
+if (isset($_POST['email']) and isset($_POST['mot_de_passe'])){
+	
+	// On récupère tout le contenu de la table membres de la base de données
+	$reponse = $bdd->prepare('SELECT email, mot_de_passe FROM membres WHERE email = ?');
 
-<!--section id ="video_presentation">
-<video controls src="https://youtu.be/gciIX6z9yjM" width="100%"></video>
-</section-->
-<iframe width="895" height="507" src="https://www.youtube.com/embed/gciIX6z9yjM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+	$reponse->execute(array($_POST['email']));
+	$donnees = $reponse->fetch();	
 
-<?php include("php/pages/footer.php"); ?>
+	
+	if ($donnees['mot_de_passe'] == $_POST['mot_de_passe']) {
+		
+		$_SESSION['email'] = $_POST['email'];
 
-</body>
-</html>
+		// On redirige vers la page d'accueil
+		header('Location: php/pages/accueil.php');
+	}
+	
+	elseif ($donnees['mot_de_passe'] != $_POST['mot_de_passe']) {
+
+		include ('login.php');
+		echo 'Votre email ou votre mot de passe est incorrecte';
+	}
+
+	$reponse->closeCursor();
+
+}
+	
+		
+// Sinon on fait apparaître le formulaire de connexion à partir d'un ... (include)
+else{
+
+	include ('login.php');
+
+}
+
+?>
