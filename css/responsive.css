@@ -1,0 +1,63 @@
+@media all and (max-width: 1020px)
+{
+    .content
+    {
+        width: 90%;
+    }
+
+    body{
+        font-size: 11px;
+    }
+
+    #menu>ul>li a {
+        font-size: 15px;
+    }
+
+    .fixed-width{
+        width: 95%;
+    }
+
+    .page-footer{
+        font-size: 15px;
+    }
+
+    #menu{
+        position: relative;
+    }
+
+    #menu>ul>li {
+        float: none;
+    }
+
+    .icon>a>img{
+        display: none;
+    }
+
+    #menu>ul>li a {
+        margin-left: -100px;
+    }
+
+    .logo{
+        width: 30px;
+    }
+    
+    #logiciel{
+        width: 70%;
+    }
+
+    #logiciel>td{
+        padding-left:10px;
+    }
+
+    .mySlides{
+        width: 90%;
+    }
+
+    .body{
+        width: 90%;
+    }
+
+    #t2{
+        position: relative;
+    }
+}
