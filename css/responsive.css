@@ -61,10 +61,28 @@
     .body{
         width: 90%;
     }
-
+    /******Programme********/
     #t2{
+        width: 100%;
         position: relative;
+        padding-left:0px;
     }
+
+    .maj>img{
+        width:90%;        
+    }
+    
+    .carre>img{
+        width:90%;
+    }
+    .carre>div>img{
+        width:90%;
+    }
+    .carre>div{
+        width:100%;
+    }
+
+    /***********************/
 
     iframe{
         width: 100%;
@@ -72,7 +90,6 @@
     }
 
     .logo{
-        float: left;
         display:inline;
     }
     
