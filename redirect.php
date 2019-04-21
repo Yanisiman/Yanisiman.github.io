@@ -17,7 +17,7 @@ session_start();
 $_SESSION['email'] = $_POST['email'];
 
 // Hachage du mot de passe
-//$pass_hache = password_hash($_POST['mot_de_passe'], PASSWORD_DEFAULT);
+$pass_hache = password_hash($_POST['mot_de_passe'], PASSWORD_DEFAULT);
 
 if (isset($_POST['mot_de_passe']) and isset($_POST['mdp_confirm'])){
 
@@ -35,7 +35,7 @@ if (isset($_POST['mot_de_passe']) and isset($_POST['mdp_confirm'])){
 			// Insertion du membre à l'aide d'une requête préparée
 			$req = $bdd->prepare('INSERT INTO membres (nom, prenom, pseudo, age, email, mot_de_passe, date_inscription) VALUES(?,?,?,?,?,?, CURRENT_DATE())');
 
-			$req->execute(array(htmlspecialchars($_POST['nom']), htmlspecialchars($_POST['prenom']), htmlspecialchars($_POST['pseudo']), htmlspecialchars($_POST['age']), htmlspecialchars($_POST['email']), htmlspecialchars($_POST['mot_de_passe'])));
+			$req->execute(array(htmlspecialchars($_POST['nom']), htmlspecialchars($_POST['prenom']), htmlspecialchars($_POST['pseudo']), htmlspecialchars($_POST['age']), htmlspecialchars($_POST['email']), $pass_hache));			
 
 			$req->closeCursor();
 
