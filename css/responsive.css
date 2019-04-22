@@ -1,25 +1,36 @@
 @media all and (max-width: 1020px)
 {
+	/******General********/
     .content
     {
         width: 90%;
-    }
+    }	
 	
-	.content#home{
-		width:90%;
-	}
-
-    body{
+	body{
         font-size: 11px;
     }
-
-    .content-small{
+	
+	.content-small{
         width: 90%;
         font-size: 15px;
     }
+	
+	#logo>img{
+		width:50%;
+	}
+	
+	#menu{
+        position: relative;
+    }
+	
+	#menu>ul>li {
+        float: none;
+    }
 
     #menu>ul>li a{
-        font-size: 30px !important;
+        font-size: 20px !important;
+		padding:5px;
+		margin-left: -100px;
     }
 
     .fixed-width{
@@ -29,22 +40,15 @@
     .page-footer{
         font-size: 15px;
     }
-
-    #menu{
-        position: relative;
-    }
-
-    #menu>ul>li {
-        float: none;
-    }
-
+	
     .icon>a>img{
         display: none;
     }
-
-    #menu>ul>li a {
-        margin-left: -100px;
-    }
+	/***********************/
+	
+	.content#home{
+		width:90%;
+	}
 
     .logo{
         width: 30px;
