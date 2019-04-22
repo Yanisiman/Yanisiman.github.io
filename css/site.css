@@ -172,7 +172,8 @@ hr#solo{
 }
 
 object{
-	width:100%;
+	border:5px solid red;
+	width:900px;
 	height:500px;
 }
 .liste>li{margin-bottom:15px;}
