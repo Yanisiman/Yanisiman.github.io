@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="icon" type="image/png" href="../images/icon.png" />
-	<link rel="stylesheet" href="../css/site.css"/>
-	<link rel="stylesheet" href="../css/problemes.css"/>
+	<link rel="stylesheet" href="../../css/site.css"/>
+	<link rel="stylesheet" href="../../css/problemes.css"/>
 	<title>FIG - Problèmes</title>
 </head>
 <body>

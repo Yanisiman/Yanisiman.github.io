@@ -2,8 +2,8 @@
 <html>
 <head>
 <link rel="icon" type="image/png" href="../images/icon.png" />
-<link rel="stylesheet" href="../css/site.css"/>
-<link rel="stylesheet" href="../css/presentation.css"/>
+<link rel="stylesheet" href="../../css/site.css"/>
+<link rel="stylesheet" href="../../css/presentation.css"/>
 <meta charset="utf-8"/>
 <title>FIG - Présentation</title>
 </head>

@@ -84,16 +84,11 @@ $rep->closeCursor(); // Termine le traitement de la requête
 
     <head>
 		<meta charset="utf-8" />
-        <link rel="stylesheet" href="profil.css" />
+        <link rel="stylesheet" href="../../css/site.css" />
 		<title>Profil</title>
 	</head>
 
 	<body>
-		<header>
-			<h1>
-				<a href="accueil.php"><?php echo 'Rebonjour' . " " . $_SESSION['pseudo'] ; ?></a>
-			</h1>
-		</header>
 
 		<?php include ('header.php'); ?>
 

@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="icon" type="image/png" href="../images/icon.png" />
-	<link rel="stylesheet" href="../css/site.css"/>
-	<link rel="stylesheet" href="../css/annexes.css"/>
+	<link rel="stylesheet" href="../../css/site.css"/>
+	<link rel="stylesheet" href="../../css/annexes.css"/>
 	<title>FIG - Annexes</title>
 </head>
 <body>

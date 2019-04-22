@@ -3,8 +3,8 @@
 <head>
 <link rel="icon" type="image/png" href="../images/icon.png" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
-<link rel="stylesheet" href="../css/site.css"/>
-<link rel="stylesheet" href="../css/profils.css"/>
+<link rel="stylesheet" href="../../css/site.css"/>
+<link rel="stylesheet" href="../../css/profils.css"/>
 <meta charset="utf-8"/>
 <title>FIG - Profils</title>
 </head>
