@@ -151,8 +151,25 @@ hr#solo{
 	padding-top:40px;
 }
 
-.content#home{text-align:center}
+.content#home{
+	font-size:20px;
+	text-align:center;
+	width:1000px;
+}
 
+#welcome{
+	font-size:25px;
+	text-align:center;
+}
+
+#accueil{
+	/*color: #AE8EBD/*#662D91*/
+	padding: 10px;
+	padding-bottom:20px;
+	margin-bottom: 20px;
+	border-radius:15px;
+	background-color: /*#FFEBC8*/;
+}
 .liste>li{margin-bottom:15px;}
 
 .fixed-width{

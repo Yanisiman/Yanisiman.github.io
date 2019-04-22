@@ -4,6 +4,10 @@
     {
         width: 90%;
     }
+	
+	.content#home{
+		width:90%;
+	}
 
     body{
         font-size: 11px;
