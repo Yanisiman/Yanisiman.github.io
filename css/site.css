@@ -170,6 +170,11 @@ hr#solo{
 	border-radius:15px;
 	background-color: /*#FFEBC8*/;
 }
+
+object{
+	width:100%;
+	height:500px;
+}
 .liste>li{margin-bottom:15px;}
 
 .fixed-width{
