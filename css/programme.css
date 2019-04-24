@@ -50,15 +50,17 @@ tr:nth-child(even){
 	height:240px;
 	padding-bottom:20px;
 }
-.carre>div>img{
-	width: 100%;
-	padding-top:10px;
-}
+
 .carre>div{
 	text-align:center;
 	display:inline-block;
 	width:449px;
 	padding-bottom:20px;
+}
+
+.carre>div>img{
+	width: 100%;
+	padding-top:10px;
 }
 
 .caption{
