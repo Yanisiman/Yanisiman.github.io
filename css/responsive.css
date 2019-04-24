@@ -89,11 +89,14 @@
     .carre>img{
         width:350px;
     }
-    .carre>div>img{
-        width:350px;
-    }
+    
     .carre>div{
+		text-align:left;
         width:100%;
+    }
+	
+	.carre>div>img{
+        width:350px;
     }
 
     /***********************/
