@@ -51,10 +51,11 @@ tr:nth-child(even){
 	padding-bottom:20px;
 }
 .carre>div>img{
-	height: 350px;
+	width: 100%;
 	padding-top:10px;
 }
 .carre>div{
+	text-align:center;
 	display:inline-block;
 	width:449px;
 	padding-bottom:20px;
