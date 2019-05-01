@@ -13,6 +13,10 @@ catch(Exception $e) // Si la connexion à la base de données ne fonctionne pas,
         die('Erreur : '.$e->getMessage());
 }
 
+if (is_null($_SESSION['email'])) {
+	header('Location: http://filiga.me/pages/accueil.html');
+}
+
 if (isset($_POST['pseudo'])){
 	// Insertion du membre à l'aide d'une requête préparée
 	$req = $bdd->prepare('UPDATE membres SET pseudo = :pseudo WHERE email = :email');

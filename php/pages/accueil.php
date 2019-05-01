@@ -14,6 +14,10 @@ catch(Exception $e) // Si la connexion à la base de données ne fonctionne pas,
 // On créé une session afin de pouvoir y mettre ensuite différentes variables que l'on pourra alors garder pendant toute la session sur le site 
 session_start();
 
+if (is_null($_SESSION['email'])) {
+	header('Location: http://filiga.me/pages/accueil.html');
+}
+
 // On récupère tout le contenu de la table membres de la base de données
 $req = $bdd->prepare('SELECT nom, prenom, pseudo, age, email, mot_de_passe, date_inscription, passions, metier, ville FROM membres WHERE email = ? ');
 $req->execute(array($_SESSION['email']));

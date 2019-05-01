@@ -6,7 +6,8 @@
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/png" href="php/images/icon.png" />
         <link rel="stylesheet" href="css/site.css" />
-        <link rel="stylesheet" href="css/login.css" />
+        <link rel="stylesheet" href="php/css/login.css" />
+        <link rel="stylesheet" type="text/css" href="">
 		<title>Inscris-toi</title>
 	</head>
 
