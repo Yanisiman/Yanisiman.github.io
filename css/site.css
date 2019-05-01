@@ -23,7 +23,7 @@ p{
 	padding-left: 10px;
 	padding-right: 10px;
 	border-radius:15px;
-	background-color: #f2f2f2;
+	background-color:;
 }
 
 img{
@@ -59,7 +59,6 @@ img{
 }
 
 #menu>ul>li a:hover {
-	font-size: 20px;
 	background-color: #111111;
 }
 
@@ -145,7 +144,32 @@ hr#solo{
 	padding-top:40px;
 }
 
-.content#home{text-align:center}
+.content-small{
+	width:900px;
+	margin:auto;
+	margin-bottom:20px;
+	padding-top:40px;
+}
+
+.content#home{
+	font-size:20px;
+	text-align:center;
+	width:1000px;
+}
+
+#welcome{
+	font-size:25px;
+	text-align:center;
+}
+
+#accueil{
+	/*color: #AE8EBD/*#662D91*/
+	padding: 10px;
+	padding-bottom:20px;
+	margin-bottom: 20px;
+	border-radius:15px;
+	background-color: /*#FFEBC8*/;
+}
 
 .liste>li{margin-bottom:15px;}
 
@@ -212,9 +236,19 @@ a:active {
 }
 
 .prob>td{
-	vertical-align: middle;
+	vertical-align: top;
 	width:50%;
 	padding:20px;
 	padding-top:5px;
 	background-color: #f2f2f2;
+}
+
+/**** CONNECTION *****/
+#connect{
+	height:99.6%;
+}
+
+object{
+	width:100%;
+	height:100%;
 }

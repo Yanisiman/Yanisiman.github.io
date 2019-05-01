@@ -88,7 +88,9 @@ $rep->closeCursor(); // Termine le traitement de la requête
 
     <head>
 		<meta charset="utf-8" />
-        <link rel="stylesheet" href="../../css/site.css" />
+        <link rel="stylesheet" href="css/site.css"/>
+		<link rel="stylesheet" href="css/annexes.css"/>
+		<link rel="stylesheet" type="text/css" href="css/responsive.css">
 		<title>Profil</title>
 	</head>
 

@@ -7,7 +7,7 @@
 		<link rel="icon" type="image/png" href="php/images/icon.png" />
         <link rel="stylesheet" href="css/site.css" />
         <link rel="stylesheet" href="php/css/login.css" />
-        <link rel="stylesheet" type="text/css" href="">
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
 		<title>Inscris-toi</title>
 	</head>
 

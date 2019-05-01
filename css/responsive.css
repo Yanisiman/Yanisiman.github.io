@@ -1,0 +1,116 @@
+@media all and (max-width: 1020px)
+{
+	/******General********/
+    .content
+    {
+        width: 90%;
+    }	
+	
+	body{
+        font-size: 11px;
+    }
+	
+	.content-small{
+        width: 90%;
+        font-size: 15px;
+    }
+	
+	#logo>img{
+		width:50%;
+	}
+	
+	#menu{
+        position: relative;
+    }
+	
+	#menu>ul>li {
+        float: none;
+    }
+
+    #menu>ul>li a{
+        font-size: 20px !important;
+		padding:5px;
+		margin-left: -100px;
+    }
+
+    .fixed-width{
+        width: 95%;
+    }
+
+    .page-footer{
+        font-size: 15px;
+    }
+	
+    .icon>a>img{
+        display: none;
+    }
+	/***********************/
+	
+	.content#home{
+		width:90%;
+	}
+
+    .logo{
+        width: 30px;
+    }
+    
+    #logiciel{
+        width: 70%;
+    }
+
+    #logiciel>td{
+        padding-left:10px;
+    }
+
+    .mySlides{
+        width: 90%;
+    }
+
+    .body{
+        width: 90%;
+    }
+    /******Programme********/
+    #t1{
+        width: 100%;
+        font-size: 9px;
+        padding-left:0px;
+    }
+    #t2{
+        width: 100%;
+        font-size: 9px;
+        position: relative;
+        padding-left:0px;
+    }
+
+    .maj>img{
+        width:350px;        
+    }
+    
+    .carre>img{
+        width:350px;
+    }
+    
+    .carre>div{
+		text-align:left;
+        width:100%;
+    }
+	
+	.carre>div>img{
+        width:350px;
+    }
+
+    /***********************/
+
+    iframe{
+        width: 100%;
+        height: 300px;
+    }
+
+    .logo{
+        display:inline;
+    }
+    
+    #logiciel>td{
+        display: inline-block;
+    }
+}
