@@ -12,7 +12,7 @@
 
 	<?php include("header.php");?>
 
-	<div class="content">
+	<div class="content-small">
 	<header>
 		<h1>Annexes & Sources</h1>
 		<hr/>
