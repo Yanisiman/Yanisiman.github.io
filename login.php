@@ -19,12 +19,12 @@
 		<div id="menu">
 		<div class="icon"><a href="accueil.php"><img src="images/icon.png" id="icon"></a></div>
 		<ul>
-		  <li><a href="http://filiga.me/presentation.html">Présentation</a></li>
-		  <li><a href="http://filiga.me/profils.html">Profils</a></li>
-		  <li><a href="http://filiga.me/programme.html">Calendrier</a></li>
-		  <li><a href="http://filiga.me/problemes.html">Problèmes</a></li>
-		  <li><a href="http://filiga.me/telechargement.html">Téléchargement</a></li>
-		  <li><a href="http://filiga.me/annexes.html">Annexes</a></li>
+		  <li><a href="http://www.filiga.me/pages/presentation.html/">Présentation</a></li>
+		  <li><a href="http://www.filiga.me/pages/profils.html/">Profils</a></li>
+		  <li><a href="http://www.filiga.me/pages/programme.html/">Calendrier</a></li>
+		  <li><a href="http://www.filiga.me/pages/problemes.html/">Problèmes</a></li>
+		  <li><a href="http://www.filiga.me/pages/telechargement.html/">Téléchargement</a></li>
+		  <li><a href="http://www.filiga.me/pages/annexes.html/">Annexes</a></li>
 		  <li><a href="index.php">Connexion</a></li>
 		  <!--<li><a href="en/home.html">EN</a></li>-->
 		</ul>
