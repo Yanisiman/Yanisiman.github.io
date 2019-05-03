@@ -10,8 +10,8 @@ catch(Exception $e) // Si la connexion à la base de données échoue, un messag
 }
 
 // Insertion du message à l'aide d'une requête préparée
-$req = $bdd->prepare('INSERT INTO minichat (pseudo, message,date_) VALUES(?, ?, CURRENT_DATE())');
-$req->execute(array($_POST['pseudo'], $_POST['message']));
+$req = $bdd->prepare('INSERT INTO minichat (message,date_) VALUES(?, CURRENT_DATE())');
+$req->execute(array($_POST['message']));
 
 $req->closeCursor();
 
