@@ -12,7 +12,24 @@
 	</head>
 
 	<body>
-		<header>
+		<div id="logo">
+		<img src="../images/logo2.png" width="25%"/>
+		</div>
+
+		<div id="menu">
+		<div class="icon"><a href="accueil.php"><img src="../images/icon.png" id="icon"></a></div>
+		<ul>
+		  <li><a href="filiga.me/presentation.html">Présentation</a></li>
+		  <li><a href="filiga.me/profils.html">Profils</a></li>
+		  <li><a href="filiga.me/programme.html">Calendrier</a></li>
+		  <li><a href="filiga.me/problemes.html">Problèmes</a></li>
+		  <li><a href="filiga.me/telechargement.html">Téléchargement</a></li>
+		  <li><a href="filiga.me/annexes.html">Annexes</a></li>
+		  <li><a href="index.php">Connexion</a></li>
+		  <!--<li><a href="en/home.html">EN</a></li>-->
+		</ul>
+		</div>
+
 			<h1>Tales of the apocalypse est fait pour toi.</h1>
 			<form method="post" action="index.php" id="connexion">					
 
@@ -33,7 +50,6 @@
 					</div>
 
 			</form>
-		</header>
 
 <!--
 		<form class="box" action="index.php" method="post">

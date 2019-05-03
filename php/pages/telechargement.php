@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="icon" type="image/png" href="../images/icon.png" />
-	<link rel="stylesheet" href="css/site.css"/>
-	<link rel="stylesheet" href="css/annexes.css"/>
-	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" href="../../css/site.css"/>
+	<link rel="stylesheet" href="../../css/annexes.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/responsive.css">
 	<title>FIG - Téléchargement</title>
 </head>
 <body>
