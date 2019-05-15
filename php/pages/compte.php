@@ -105,7 +105,7 @@ $rep->closeCursor(); // Termine le traitement de la requête
 	<body>
 
 		<?php include ('header.php'); ?>
-
+<div class="content">
 		<h2>
 			Vos Informations personnelles : 
 		</h2>
@@ -202,7 +202,7 @@ $rep->closeCursor(); // Termine le traitement de la requête
 		<form method="post" action="renseignements.php">
 			<input id="modifier6" type="submit" value="Modifier"/>
 		</form>
-
+</div>
 		<?php include ('footer.php'); ?>
 
 	</body>

@@ -17,7 +17,7 @@
 		</div>
 
 		<div id="menu">
-		<div class="icon"><a href="accueil.php"><img src="images/icon.png" id="icon"></a></div>
+		<div class="icon"><a href="http://www.filiga.me/index.html"><img src="images/icon.png" id="icon"></a></div>
 		<ul>
 		  <li><a href="http://www.filiga.me/pages/presentation.html">Présentation</a></li>
 		  <li><a href="http://www.filiga.me/pages/profils.html">Profils</a></li>

@@ -84,38 +84,39 @@ moyens d'obtenir le jeu et les annexes inhérentes à ce dernier.
 					</table>
 
 				    <input type="submit" value="Envoyer" />
+					
+					<div id="chat">
+					<?php
+					// Connexion à la base de données
+					try
+					{
+						$bdd = new PDO('mysql:host=localhost; dbname=yanis; charset=utf8', 'yanis', 'yanicha25');
+					}
+					catch(Exception $e) // Si la connexion à la base de données échoue, un message d'erreur s'affiche alors
+					{
+							die('Erreur : '.$e->getMessage());
+					}
 
+					// Récupération des 10 derniers messages dans la table minichat de la base de données
+					$reponse = $bdd->query('SELECT message, date_ FROM minichat ORDER BY ID DESC LIMIT 0, 10');
+
+					// Affichage de chaque message (toutes les données sont protégées par htmlspecialchars)
+					while ($donnees = $reponse->fetch())
+					{ 
+						echo '<p class="chat"><strong>' . htmlspecialchars($_SESSION['pseudo']) . '</strong> : ' . htmlspecialchars($donnees['message']) . ' ( ' . $donnees['date_']. ' )</p>';
+					}
+
+					$reponse->closeCursor();
+
+					?>
+					</div>
 			    </fieldset>
 					
 		    </form>
 
 		</div>
 
-		<div id="chat">
-		<?php
-		// Connexion à la base de données
-		try
-		{
-			$bdd = new PDO('mysql:host=localhost; dbname=yanis; charset=utf8', 'yanis', 'yanicha25');
-		}
-		catch(Exception $e) // Si la connexion à la base de données échoue, un message d'erreur s'affiche alors
-		{
-		        die('Erreur : '.$e->getMessage());
-		}
-
-		// Récupération des 10 derniers messages dans la table minichat de la base de données
-		$reponse = $bdd->query('SELECT message, date_ FROM minichat ORDER BY ID DESC LIMIT 0, 10');
-
-		// Affichage de chaque message (toutes les données sont protégées par htmlspecialchars)
-		while ($donnees = $reponse->fetch())
-		{ 
-			echo '<p class="chat"><strong>' . htmlspecialchars($_SESSION['pseudo']) . '</strong> : ' . htmlspecialchars($donnees['message']) . ' ( ' . $donnees['date_']. ' )</p>';
-		}
-
-		$reponse->closeCursor();
-
-		?>
-		</div>
+		
 </div>
 
 <?php include("footer.php"); ?>

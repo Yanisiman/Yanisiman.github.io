@@ -1,0 +1,7 @@
+#section{
+	float:left;
+	position:fixed;
+	left:5px;
+	width:200px;
+	border:2px solid red;
+}

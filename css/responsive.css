@@ -113,4 +113,9 @@
     #logiciel>td{
         display: inline-block;
     }
+	
+	#section{
+		float:none;
+		width:auto;
+	}
 }
