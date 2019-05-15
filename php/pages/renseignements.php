@@ -12,12 +12,17 @@ session_start();
 
     <head>
 		<meta charset="utf-8" />
+		<link rel="icon" type="image/png" href="../images/icon.png" />
+		<link rel="stylesheet" href="../../css/site.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/responsive.css">
         <link rel="stylesheet" href="../css/renseignements.css" />
 		<title>Renseignements</title>
 	</head>
 
 
 	<body>
+
+		<?php include("header.php");?>
 
 		<section id="formulaire">
 			<form method="post" action="compte.php">
