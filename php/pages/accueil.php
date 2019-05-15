@@ -67,14 +67,14 @@ moyens d'obtenir le jeu et les annexes inhérentes à ce dernier.
 </div>
 
 <div id="section">	
-
+azeeeeeeeeeee
 		<div id="formulaire">
 
 			<form action="minichat.php" method="post">
 
 				<fieldset>
 					
-					<legend>Mini chat afin de discuter avec les autres membres du site</legend>
+					<legend>Laissez des commentaires</legend>
 
 					<table>
 			      	    <tr>						
