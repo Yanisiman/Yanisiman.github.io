@@ -29,8 +29,8 @@
 		  <!--<li><a href="en/home.html">EN</a></li>-->
 		</ul>
 		</div>
-
-			<h1>Tales of the apocalypse est fait pour toi.</h1>
+		<div class="content">
+			<h2>Tales of the apocalypse est fait pour toi.</h2>
 			<form method="post" action="index.php" id="connexion">					
 
 					<table>
@@ -64,7 +64,7 @@
 			<!-- On crée un formulaire afin de recueillir les différentes informations et de les mettre dans une base de données que l'on pourra ensuite ressortir plus tard --> 
 				<form method="post" action="redirect.php">
 					<fieldset>
-						<legend>Pas encore inscris ? Remplis donc ces quelques informations</legend>
+						<legend>Pas encore inscrit ? Remplis donc ces quelques informations</legend>
 						<!-- On crée un tableau afin de mieux organiser la mise en page du formulaire -->
 						<table>
 						<tr>
@@ -104,9 +104,7 @@
 
 				</form>
 			</section>
-
-				
-
+		</div>
 
 	</body>
 
