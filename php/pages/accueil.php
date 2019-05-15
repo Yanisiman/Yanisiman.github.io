@@ -67,7 +67,7 @@ moyens d'obtenir le jeu et les annexes inhérentes à ce dernier.
 </div>
 
 <div id="section">	
-azeeeeeeeeeee
+
 		<div id="formulaire">
 
 			<form action="minichat.php" method="post">

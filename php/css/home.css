@@ -7,6 +7,10 @@
 	background : rgba(200, 202, 209,0.8);
 	border: 5px double blue;
 	color: firebrick;
+	float:left;
+	position:fixed;
+	left:5px;
+	width:200px;
 }
 #chat
 {
