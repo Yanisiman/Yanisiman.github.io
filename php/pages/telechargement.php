@@ -3,8 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="icon" type="image/png" href="../images/icon.png" />
-	<link rel="stylesheet" href="../css/site.css"/>
-	<link rel="stylesheet" href="../css/telechargement.css"/>
+	<link rel="stylesheet" href="../../css/site.css"/>
+	<link rel="stylesheet" href="../../css/annexes.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/responsive.css">
 	<title>FIG - Téléchargement</title>
 </head>
 <body>
@@ -27,7 +28,10 @@
 	<a href="../liens/Cahier.pdf">Cahier des Charges</a>
 
 	<h2>Rapport de soutenance</h2>
-	<a href="../liens/Rapport1.pdf">Rapport de soutenance</a>
+	<ul>
+		<li><a href="../liens/Rapport1.pdf">Rapport de soutenance 1</a></li>
+		<li><a href="../liens/Rapport2.pdf">Rapport de soutenance 2</a></li>
+	</ul>	
 
 	<h2>Version Lite du jeu</h2>
 	<a href=#>Version Lite du jeu</a>

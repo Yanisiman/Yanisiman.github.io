@@ -3,15 +3,16 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="icon" type="image/png" href="../images/icon.png" />
-	<link rel="stylesheet" href="../css/site.css"/>
-	<link rel="stylesheet" href="../css/annexes.css"/>
+	<link rel="stylesheet" href="../../css/site.css"/>
+	<link rel="stylesheet" href="../../css/annexes.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/responsive.css">
 	<title>FIG - Annexes</title>
 </head>
 <body>
 
 	<?php include("header.php");?>
 
-	<div class="content">
+	<div class="content-small">
 	<header>
 		<h1>Annexes & Sources</h1>
 		<hr/>
