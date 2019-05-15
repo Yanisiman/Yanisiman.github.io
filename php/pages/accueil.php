@@ -64,7 +64,7 @@ moyens d'obtenir le jeu et les annexes inhérentes à ce dernier.
 </div>
 
 <iframe width="895" height="507" src="https://www.youtube.com/embed/gciIX6z9yjM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+
 
 <div id="section">	
 
@@ -118,7 +118,7 @@ moyens d'obtenir le jeu et les annexes inhérentes à ce dernier.
 
 		
 </div>
-
+</div>
 <?php include("footer.php"); ?>
 
 </body>
