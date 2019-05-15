@@ -51,11 +51,3 @@ body{
 .box input[type = "submit"]:hover{
 	background: #2ecc71;
 }
-
-.content{
-	width:900px;
-	margin:auto;
-	margin-bottom:20px;
-	padding-top:40px;
-	border:5px solid red;
-}
