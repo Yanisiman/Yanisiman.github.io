@@ -17,40 +17,48 @@ if (is_null($_SESSION['email'])) {
 	header('Location: http://filiga.me/pages/accueil.html');
 }
 
-if (isset($_POST['pseudo'])){
+if(htmlspecialchars($_POST['email']) != $_SESSION['email']){
+	header('Location: renseignements.php');
+}
+else{
+
+	if (isset($_POST['pseudo'])){
 	// Insertion du membre à l'aide d'une requête préparée
 	$req = $bdd->prepare('UPDATE membres SET pseudo = :pseudo WHERE email = :email');
 	$req->execute(array('pseudo' => htmlspecialchars($_POST['pseudo']), 'email' => htmlspecialchars($_POST['email'])));
 	$req->closeCursor();
+	}
+
+	if (isset($_POST['mot_de_passe'])){
+		// Insertion du membre à l'aide d'une requête préparée
+		$req = $bdd->prepare('UPDATE membres SET mot_de_passe = :mot_de_passe WHERE email = :email');
+		$pass_hache = password_hash(htmlspecialchars($_POST['mot_de_passe']), PASSWORD_DEFAULT);
+		$req->execute(array('mot_de_passe' => $pass_hache, 'email' => htmlspecialchars($_POST['email'])));
+		$req->closeCursor();
+	}
+
+	if (isset($_POST['passions'])){
+		// Insertion du membre à l'aide d'une requête préparée
+		$req = $bdd->prepare('UPDATE membres SET passions = :passions WHERE email = :email');
+		$req->execute(array('passions' => htmlspecialchars($_POST['passions']), 'email' => htmlspecialchars($_POST['email'])));
+		$req->closeCursor();
+	}
+
+	if (isset($_POST['metier'])){
+		// Insertion du membre à l'aide d'une requête préparée
+		$req = $bdd->prepare('UPDATE membres SET metier = :metier WHERE email = :email');
+		$req->execute(array('metier' => htmlspecialchars($_POST['metier']), 'email' => htmlspecialchars($_POST['email'])));
+		$req->closeCursor();
+	}
+
+	if (isset($_POST['ville'])){
+		// Insertion du membre à l'aide d'une requête préparée
+		$req = $bdd->prepare('UPDATE membres SET ville = :ville WHERE email = :email');
+		$req->execute(array('ville' => htmlspecialchars($_POST['ville']), 'email' => htmlspecialchars($_POST['email'])));
+		$req->closeCursor();
+	}
 }
 
-if (isset($_POST['mot_de_passe'])){
-	// Insertion du membre à l'aide d'une requête préparée
-	$req = $bdd->prepare('UPDATE membres SET mot_de_passe = :mot_de_passe WHERE email = :email');
-	$req->execute(array('mot_de_passe' => htmlspecialchars($_POST['mot_de_passe']), 'email' => htmlspecialchars($_POST['email'])));
-	$req->closeCursor();
-}
-
-if (isset($_POST['passions'])){
-	// Insertion du membre à l'aide d'une requête préparée
-	$req = $bdd->prepare('UPDATE membres SET passions = :passions WHERE email = :email');
-	$req->execute(array('passions' => htmlspecialchars($_POST['passions']), 'email' => htmlspecialchars($_POST['email'])));
-	$req->closeCursor();
-}
-
-if (isset($_POST['metier'])){
-	// Insertion du membre à l'aide d'une requête préparée
-	$req = $bdd->prepare('UPDATE membres SET metier = :metier WHERE email = :email');
-	$req->execute(array('metier' => htmlspecialchars($_POST['metier']), 'email' => htmlspecialchars($_POST['email'])));
-	$req->closeCursor();
-}
-
-if (isset($_POST['ville'])){
-	// Insertion du membre à l'aide d'une requête préparée
-	$req = $bdd->prepare('UPDATE membres SET ville = :ville WHERE email = :email');
-	$req->execute(array('ville' => htmlspecialchars($_POST['ville']), 'email' => htmlspecialchars($_POST['email'])));
-	$req->closeCursor();
-}
 	
 
 

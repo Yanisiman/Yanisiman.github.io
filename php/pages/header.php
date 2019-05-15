@@ -7,7 +7,7 @@
 <ul>
   <li><a href="presentation.php">Présentation</a></li>
   <li><a href="profils.php">Profils</a></li>
-  <li><a href="programme.php">Calendrier</a></li>
+  <li><a href="programme.php">Avancement</a></li>
   <li><a href="problemes.php">Problèmes</a></li>
   <li><a href="telechargement.php">Téléchargement</a></li>
   <li><a href="annexes.php">Annexes</a></li>

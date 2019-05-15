@@ -23,7 +23,7 @@ if (isset($_POST['email']) and isset($_POST['mot_de_passe'])){
 	$donnees = $reponse->fetch();	
 
 	
-	if ($donnees['mot_de_passe'] == $_POST['mot_de_passe']) {
+	if ($donnees['mot_de_passe'] == $_POST['mot_de_passe'] or password_verify(htmlspecialchars($_POST['mot_de_passe']),$donnees['mot_de_passe'])) {
 		
 		$_SESSION['email'] = $_POST['email'];
 
