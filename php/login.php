@@ -42,8 +42,7 @@
 							<td><input type="email" name="email" id="email" placeholder="Ecrivez votre email" maxlength="30" size="20" required /></td>
 							<td><input type="password" name="mot_de_passe" id="mdp" placeholder="Ecrivez votre mot de passe" maxlength="20" size="20" required /></td>
 						</tr>
-
-						</table>
+					</table>
 
 					<div id="co">
 						<input id="Connecter" type="submit" value="Se Connecter">
