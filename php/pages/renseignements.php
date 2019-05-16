@@ -23,7 +23,7 @@ session_start();
 	<body>
 
 		<?php include("header.php");?>
-
+	<div class="content">
 		<section id="formulaire">
 			<form method="post" action="compte.php">
 				<fieldset >
@@ -74,7 +74,7 @@ session_start();
 
 			</form>
 		</section>
-
+	</div>
 	</body>
 
 </html>

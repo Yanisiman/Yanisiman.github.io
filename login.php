@@ -17,7 +17,7 @@
 		</div>
 
 		<div id="menu">
-		<div class="icon"><a href="accueil.php"><img src="images/icon.png" id="icon"></a></div>
+		<div class="icon"><a href="http://www.filiga.me/index.html"><img src="images/icon.png" id="icon"></a></div>
 		<ul>
 		  <li><a href="http://www.filiga.me/pages/presentation.html">Présentation</a></li>
 		  <li><a href="http://www.filiga.me/pages/profils.html">Profils</a></li>
@@ -29,8 +29,8 @@
 		  <!--<li><a href="en/home.html">EN</a></li>-->
 		</ul>
 		</div>
-
-			<h1>Tales of the apocalypse est fait pour toi.</h1>
+		<div class="content">
+			<h2>Tales of the apocalypse est fait pour toi.</h2>
 			<form method="post" action="index.php" id="connexion">					
 
 					<table>
@@ -42,8 +42,7 @@
 							<td><input type="email" name="email" id="email" placeholder="Ecrivez votre email" maxlength="30" size="20" required /></td>
 							<td><input type="password" name="mot_de_passe" id="mdp" placeholder="Ecrivez votre mot de passe" maxlength="20" size="20" required /></td>
 						</tr>
-
-						</table>
+					</table>
 
 					<div id="co">
 						<input id="Connecter" type="submit" value="Se Connecter">
@@ -64,7 +63,7 @@
 			<!-- On crée un formulaire afin de recueillir les différentes informations et de les mettre dans une base de données que l'on pourra ensuite ressortir plus tard --> 
 				<form method="post" action="redirect.php">
 					<fieldset>
-						<legend>Pas encore inscris ? Remplis donc ces quelques informations</legend>
+						<legend>Pas encore inscrit ? Remplis donc ces quelques informations</legend>
 						<!-- On crée un tableau afin de mieux organiser la mise en page du formulaire -->
 						<table>
 						<tr>
@@ -104,9 +103,7 @@
 
 				</form>
 			</section>
-
-				
-
+		</div>
 
 	</body>
 

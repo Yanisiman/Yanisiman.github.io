@@ -12,6 +12,7 @@
   <li><a href="telechargement.php">Téléchargement</a></li>
   <li><a href="annexes.php">Annexes</a></li>
   <li><a href="compte.php">Compte</a></li>
+  <li><a href="http://www.filiga.me/index.html">Déconnexion</a></li>
   <!--<li><a href="en/home.html">EN</a></li>-->
 </ul>
 </div>
