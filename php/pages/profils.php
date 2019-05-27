@@ -54,11 +54,30 @@
 	La génération de la ville a occupé sans aucun doute la plus grande partie de mon travail. Je souhaitais pouvoir créer une ville procéduralement que le joueur puisse explorer complètement. Nos routes sont principalement caractérisés par leurs "ouvertures" dans les directions cardinals, il suffit alors de relier des points d'intérêts entre eux en "ouvrant" au fur et à mesure la route. Pour l'instant, toutes les villes ont 9 points d'interêts plus ou moins reliés entre eux, les ouvertures Nord/Sud/Est/Ouest de la ville, un centre approximatif de la ville et 4 points répartis dans chaque cadrans de la ville. Une fois ce système mis en place, j'ai commencé à réfléchir à un moyen de mettre des bâtiments dans la ville. J'ai décidé de générer des bâtiments seulement à côté des routes, tout d'abord des bâtiments de petites tailles (carré de 1x1) simple à positionner face à la route puis des bâtiments plus grands (rectangle de 2*1). Au final, ce système génère une ville satisfaisante tout en étant extrêmement modulable, l'ajout et la suppression de bâtiment ne demandant même pas de regarder le code.
 	</p>
 	<p><em>A faire : </em>	Pour les prochaines soutenances, je dois finaliser la génération du monde. Je vais aussi implémenter le système de santé, de combat et d’artisanat.</p>
+
+	<h3>Deuxième soutenance</h3>
+	
+	<p><em>Conception : </em> Pour cette soutenance, j’ai implémenté la génération du monde, le systeme de sante, le système d’artisanat. Pour la génération du monde, j’ai tout d’abord améliore la génération de la ville avec des ruelles dynamiques et l’apparition de bâtiment 2 x 2. Le monde se génère avec des biomes différents (pour l’instant il y a le biome arid forest et plaine), des villes et des villages sont placées aléatoirement, les villages sont des villes plus petites et avec moins de connexions de routes.
+
+Ensuite, j’ai implémenté le système de placement de meuble et de décorations. On place des emplacements caractérise par une liste de meuble avec leur chance d'apparaître dans les batiments, on n’a pas besoin de toucher au code pour ajouter des emplacements. 
+
+Comme annoncé dans le cahier des charges, nous souhaitons donner une identité au personnages. Lors de la création d'un personnage, des traits lui sont attribués, ces traits modifient les caractéristiques du personnages, par exemple le trait "fort” donne +10 à la force du personnage. Ce système de trait permettra au joueur de s'attacher plus facilement à ses personnages, ainsi que rendre ces personnages plus mémorables. 
+
+J’ai implémenté un système de santé relativement complexe. Chaque personnage à plusieurs parties du corps avec des spécificités différentes(tête, jambes, torses, bras, mains etc). Chaque partie du corps peut avoir des blessures. Chaque blessure pouvant avoir des effets différents (saignement, infection, fracture etc).
+
+Avec ce système de santé existe le système de combat, chaque personnage peut s'équiper d'arme et d'armure. Les armes ont des caractéristiques nombreuses: à distance ou non, tranchante, dégât de l'arme, vitesse d'attaque etc. Les armures en ont aussi: résistance au coupure, résistance à la température etc.
+
+Pour illustrer ces deux systèmes prenons un exemple, un personnage en attaque un autre avec un sabre, s'il réussit le personnage est coupé à la jambe, la blessure va saigner, il risque de mourir si son stock de sang se vide. Aussi, comme c'est la jambe qui été touché, sa vitesse de déplacement change grandement. De plus, si la coupure est trop importante la jambe est entièrement coupé, le personnage perd alors sa jambe et son pied. Enfin, la douleur provoqué par la blessure affecte les capacités du personnages et peut le faire s'évanouir.
+
+Pour fini, j’ai implémenté un système de construction ou les joueurs peuvent placer des plans de construction, pour l’instant la construction apparaît directement mais sur le long terme ,les personnages pourront finir la construction en utilisant leurs ressources.
+
+	</p>
+	<p><em>A faire : </em>	Aussi, pour la prochaine soutenance, je finirai le système de santé en ajoutant les notions de maladie et de température et la possibilité de soigner les blessures ainsi qu’un système de connaissance.</p>
 	
 
 	<h2>Ce que ce projet m'a apporté</h2>
 	<hr/>
-	<p></p>
+	<p>L'expérience du projet jusqu'à présent a pour moi été utile et révélatrice sur plusieurs plans. Tout d'abord sur le plan de la programmation j'ai pu grandement m'améliorer et me familiariser avec les codes à respecter pour travailler en équipe. Le fait d'apprendre en autodidacte à utiliser Unity m'a aussi permis de changer mes méthodes d'apprentissage, une rigueur plus importante étant nécessaire. Sur le plan du travail d'équipe, ayant été désigné chef de projet, j'ai pu expérimenter les meilleurs moyens de répartir le travail au sein du groupe et de garder ce dernier soudé et motivé, expérience et pratiques qui me seront à coup sûr utiles dans le futur.</p>
   </div>
 
   <div class="mySlides" style="display:none">
@@ -87,9 +106,27 @@
 		<em>A faire : </em> Ce que je dois implémenter pour les prochaines soutenances sont d’autres interfaces utilisateurs comme un menu de pause. Pour le site Web il faudra continuer à le mettre à jour avec les différentes informations que nous pouvons lui apporter et essayer de le rendre plus “dynamique” c’est-à-dire gérer la mise en page du site selon les différents appareils sur lesquels il peut s’afficher.
 	</p>
 
+	<h3>Deuxième soutenance</h3>
+	<p>
+		<em>Conception : </em> Mon travail se découpe donc en trois parties : 
+		<ul>
+			<li>Le multijoueur où j’ai modifié la recherche de salles de jeux grâce aux fonctions proposées par Photon, la création de ces salles en ajoutant des paramètres propres à notre jeu et l’attente dans la salle où j’ai implémenté le système d’équipes, avec des chefs d’équipes et le chef de la salle qui ont des droits supérieurs par rapport aux autres joueurs.</li>
+			<li>Les menus et interfaces utilisateurs : J’ai modifié les différents menus avec les différentes images fournies par Marc. Ensuite j’ai modifié les différents éléments interfaces utilisateurs présents dans la connexion au mode multijoueur avec par exemple l’affichage des équipes et des joueurs lors du temps d’attente de partie dans la salle. Dans le jeu j’ai modifié le boîte d’informations des personnages, la barre de référence aux personnages et aussi les interfaces du jeu tels que l’interface du personnage ou l’inventaire des meubles. L’interface de chaque personnage contient 4 onglets différents : l’onglet inventaire possédant les différents objets du personnage, l’onglet équipement dans lequel se trouvent les objets qui sont équipés au personnage, l’onglet artisanat qui permet de faire des recettes afin de créer de nouveaux objets et enfin l’onglet santé dans lequel sont affichés les différentes statistiques de santé du personnage et des informations sur ses blessures. Finalement j’ai ajouté une barre de construction composée de plusieurs boutons qui permettent de lancer le mode construction et de construire l’objet sélectionné.</li>
+			<li>Concernant le site Web, je me suis occupé de la maintenance du site. J'ai aussi commencé à travailler sur une version du site utilisant un serveur pour l'implémentation d'un site dynamique avec une base de données afin d'avoir des utilisateurs qui peuvent se connecter ou créer des comptes. Ils peuvent aussi envoyer des messages d'avis du jeu sur la page d'accueil ou encore consulter leur page de profil avec les différentes informations concernant leur compte.</li>
+		</ul>
+		<em>A faire : </em>Ce que je dois implémenter pour les prochaines soutenances sont un canal de communication pour que les joueurs puissent discuter entre eux et polir les différentes interfaces utilisateurs pour en avoir un meilleur rendu. Pour le site Web il faudra continuer à le mettre à jour avec les différentes informations que nous pouvons lui apporter et finaliser les éléments liés à la base de données.
+	</p>
+
 	<h2>Ce que ce projet m'a apporté</h2>
 	<hr/>
-	<p></p>
+	<p>
+Après 6 mois de travail acharné sur ce projet, je peux dire que celui-ci m'a apporté de nombreuses choses. En effet il m'a permis de travailler sur le coté programmation et de m'améliorer dans ce domaine mais aussi de me familiariser avec de nouveaux éléments tel qu'Unity ou encore du côté du site Web.
+
+Cet apport de connaissances n'est pas négligeable puisqu'elles pourront nous resservir à tout moment le long de notre cursus scolaire ou même plus tard en tant qu'ingénieur.
+
+Ce projet m'a aussi apporté beaucoup pour mon futur métier d'ingénieur avec la réalisation du projet en groupe, nous apprenant donc à mieux nous organiser et à mieux gérer la division du travail et de l'échange d'informations entre membres afin de toujours être au courant des avancées des autres. 
+
+J'ai aussi pu apprendre à toujours chercher des solutions aux problèmes que nous rencontrons et de persévérer jusqu'à la réussite et même si des fois, psychologiquement, c'est dur de rester bloquer pendant des heures sur un même problème, j'ai appris à ne pas lâcher car c'est un travail de groupe et je ne peux pas juste abandonner et laisser les autres se débrouiller avec les problèmes que je leur ai laissé.</p>
   </div>
 
   <div class="mySlides" style="display:none">
@@ -111,11 +148,29 @@
 		<em>Conception: </em> Yanis et moi étions les seuls à avoir de l’expérience dans la création de site web et de nous deux, j’avais le plus de connaissance en CSS. Par conséquent, j’étais chargé de la conception visuelle du site. Pratiquement l’intégralité du site à été réalisée en CSS sauf l’interface d’affichage des profils qui a été fait en JavaScript. Il était impossible de faire une telle interface en CSS et n’ayant aucune connaissances en JavaScript, je me suis aidé d’un modèle que j’ai modifié pour obtenir ce que je recherchais. Lorsqu’un membre du groupe veut rajouter du contenu au site, il ajoute directement sur le fichier en Html et met à jour via GitHub. Ensuite je récupère le fichier pour faire la mise en page. Après avoir fini le travail à faire sur le site web, j’ai commencé à travailler sur le jeu. Ensuite Tanguy m’a expliqué leur avancé dans la programmation et le fonctionnement de plusieurs scripts, pour enfin réaliser un cycle jour-nuit avec un système d’heure en fonction de la rotation du soleil. 
 	</p>
 	<p><em>A faire: </em>Je suis encore en train de me familiariser avec Unity. Nous souhaitons pour la  prochaine soutenance implémenter de nouveaux comportements des PNJ (personnages non jouables) ainsi que les premiers ennemis (mort-vivants).
-</p>
+	</p>
+
+	<h3>Première soutenance</h3>
+	<p>
+		<em>Conception: </em> Nous avions de l’avance sur le site pendant la première soutenance, la majorité de la mise en page étant déjà faite, il ne me restait plus qu’à m’assurer que le site soit adaptatif au petits périphériques. Je n’avais jamais fais de site adaptatif auparavant, donc j’ai du me renseigner en amont. Globalement, si la vue du site devient trop petite le site s’adapte.
+
+Pour cette 2e soutenance nous implémenter de l’audio. Pour gérer tout ça nous avons un manageur audio qui, comme son nom l’indique, gère toutes les sources audio. On y stock tous les sons et toutes les musiques et on peut y régler leur nom, leur volume, choisir si elles se répètent, etc. On peut ainsi faire jouer n’importe quel son ou musique n’importe quand et n’importe où dans un script en une ligne de commande. Pour l’instant, nous avons implémenté un cycle de musique en lien avec le cycle jour/nuit. La musique change lorsque la nuit tombe et revient au levée du soleil. Nous entendons aussi un son d’alerte lorsqu’un zombie nous repère.
+
+Pour l’instant, les intelligences artificielles, nous avons un zombie qui pourra ensuite être adapté à d’autres animaux. Le comportement du zombie est le suivant : il erre aléatoirement en s’arrêtant de temps en temps, dès qu’il détecte le joueurs le plus proche de lui dans son angle de vue.
+
+Nous avons également intégré une base de données pour avoir des noms et prénoms aléatoires. 
+
+	</p>
+	<p><em>A faire: </em>Pour ce qui est des sons, les bruitages nécessaires au jeu ont déjà été recueillis et archivés et il ne reste donc qu'à tous les implémenter et à les faire coller avec les actions auxquelles ils correspondent.
+Pour les musiques, celles ci ayant été produites depuis la première soutenance et certaines déjà mises en place, l'ajout ou la modification d'éléments à ce niveau là va déprendre des envies pour le jeu plus que d'un besoin.
+
+Pour la suite de la conception des intelligences artificielles il faudra créer un modèle d'intelligence artificielle gérant les personnages non jouables non hostiles avec lesquels le joueur pourra interagir. Sur le modèle des zombies et du rat déjà programmé il faudra ajouter d'autres animaux au jeu, la liste précise n'étant pas définie à ce jour sans pour autant que les idées et les méthodes manquent.
+
+	</p>
 
 	<h2>Ce que ce projet m'a apporté</h2>
 	<hr/>
-	<p></p>
+	<p>En travaillant sur ce projet, j'ai pu apprendre beaucoup de nouvelles choses. Tout d'abord de nouvelle notions de programmation en C\# mais aussi de développement web, notamment en CSS avec la réalisation de site adaptatif. Depuis ma première expérience de création de jeu sur Pygame en ISN, j'ai toujours voulu utiliser un moteur de jeu tel que Unity pour explorer et utiliser toutes ses fonctionnalités que Pygame ne possède pas. Travailler en groupe de quatre m'a également beaucoup appris. En effet, c'est très différent que de travailler en groupe de deux comme j'ai pu le faire en ISN. Grâce à cela, j'ai pu me rendre compte de l'importance de la répartition des tâches et de la communication dans un groupe.</p>
   </div>
 
   <div class="mySlides" style="display:none">
@@ -148,8 +203,28 @@
 	<em>A faire : </em> D'ici les prochaines soutenances nous souhaitons avoir une progression linéaire de la création de modèles et d'éléments du jeu pour ne pas être pris de court, ce sera donc un travail de fond. Pour ce qui est de la forme nous souhaitons introduire des animations pour d'autres objets que nos personnages (ex : porte) mais également pouvoir ajouter des objets visibles sur les modèles 3D depuis le jeu lors de leur utilisation (ex : torche).
 	</p>
 
+	<h3>Deuxième soutenance</h3>
+	<p>
+	<em>Conception : </em>Le premier travail sur les textures du jeu entre la première et la seconde soutenance a été les images présentes dans les menus. L'idée était d'avoir un environnement rappelant le contexte apocalyptique du jeu sans pour autant que l'endroit soit reconnaissable. En conséquence ces images sont floutées et c'est la raison pour laquelle des images réalistes et non du pixel art ou des scènes voxel ont été choisies, les deux dernières options essayées collant plus avec le style général voulu mais rendant beaucoup moins bien.
+- La seconde tâche, plus majeure, a été de commencer à faire toutes les icônes dont nous nous servons dans le jeu. Déjà les icônes d'interface pour le menu par exemple les boutons de validation et d'exclusion du menu multijoueur mais aussi toutes les icônes d'objet visibles dans les inventaires du jeu, on trouve en vrac les armes, les meubles et les composants de construction qui ont chacun besoin de leur texture facilement identifiable.
+- Le travail sur les modèles du jeu s'est fait dans la continuité de ce qui avait été fait pour la première soutenance mais à un rythme bien plus soutenu. 
+Au niveau modèles nécessaires à la conception des villes j'ai jusqu'à présent j'ai pu terminer onze bâtiments différents. Pour chacun d'entre eux j'ai d'abord fait un modèle générique avec le découpage des pièces, des escaliers et de quelques éléments qui ne seraient pas disponible à l’interaction dans le jeu final comme des sonnettes à l'entrée des immeubles qui seraient hors service dans le cadre d'une apocalypse. J'ai ensuite fait pour chaque plusieurs versions des différents étages des bâtiments, ajoutant des détails comme de la salissure ou encore des effondrements de façade. Cette partie de la conception a pour but de ne pas avoir un environnement trop redondant. La plupart de ces modèles sont déjà ajoutés au jeu mais une partie est simplement encore en conception en attente de formes détaillés alternatives.
+Pour ce qui est des modèles de meuble et autres éléments qui constituent la génération des pièces mais aussi des rues avec des poubelles ou encore des 'espaces de nature' avec une végétation variée le travail a là aussi suivit son chemin. J'ai pu finaliser beaucoup de modèles (lit, établis, poubelles, meubles de stockage en tout genre, éléments plus spécifiques à certains bâtiments comme des rayons pour les espaces de vente) qui ne sont pas encore présents dans le jeu car il faudra d'abord définir toutes leurs positions possibles, action indispensable pour la génération de ville. La raison pour laquelle cela n'est pas encore fait a été une question de temps mais c'est surtout qu'il sera préférable de le faire une fois tous les modèles en main pour éviter de revenir sur la position de la génération pour ajouter de nouvelles choses et tout faire efficacement en une fois.
+- L'animation n'a pas beaucoup évoluée entre cette première et seconde soutenance nos objectifs initiaux ayant déjà été remplis dès la première. Il y a néanmoins eu un travail de recherche sur l'animation de plusieurs modèles assemblés entre eux et aussi le début d'une constitution d'une banque d'animation personnalisée pour les zombies qui doivent avoir leurs propres manières de déplacement.
+- Les textures et les modèles sont en bon avancement, j'estime le pourcentage effectué entre 40 et 50 pourcent de ce qu'ils faudra globalement dans la première tâche et vers soixante pourcent pour la seconde. Le travail d'animation a du passer rester à 50 pourcent, les avancements étant surtout théorique et le travail de la première soutenance étant voué à être réutilisé.
+	<p>
+	<em>A faire : </em>Pour la suite il va falloir faire celles des menus maintenant qu'ils sont mis en place, la possibilité de changer le design de choses comme les boutons du menu est aussi d'actualité mais la majeur partie des textures à faire sont celles de tous les objets récupérables, faisables et observable en jeu dans les différents inventaires. Le style cubique de ces textures va rester pour continuer à coller avec le style général du jeu.
+- Pour la  fin de ce projet il va falloir finir tous les modèles nécessaires au jeu et les implémenter sur Unity, à savoir encore une dizaine de bâtiments, les modèles de personnalisation pour les personnages qui vont permettre de les différencier (vêtements, expressions faciales) et surtout beaucoup de meubles et autres objets avec lesquels on peut interagir qui donneront de la vie au jeu et qui devront avoir des positions définies pour chaque bâtiment, route et 'espace de nature'.
+- Au niveau des animations il va falloir incorporer celles des personnages non joueurs hostiles tels que les zombies et aussi celles nécessaires pour les actions de construction ou de combat (ex : avoir une animation pour les différents coups des personnages ou encore des animations de mort)
+
+	</p>
+
 	<h2>Ce que ce projet m'a apporté</h2>
 	<hr/>
+	<p>M'étant occupé majoritairement de la modélisation, de l'animation et des aspects graphiques pendant ces quatre premiers mois c'est surtout dans ce domaine que je me suis amélioré. Voir ma propre progression au fil du travail a été un facteur de motivation majeur et les tâches que j'effectuais en une heure au début de ces quatre mois ne me prennent souvent plus que vingt à trente minutes maintenant. Au delà de ça j'ai pu progresser un peu en programmation et ai appris beaucoup de fonctionnalités de Unity en suivant les autres travaux en cours du projet, notamment en lisant les différents scripts du jeu.
+
+	Enfin  la chose la plus importante que j'ai pu expérimenter et pratiquer durant ces quatre mois est le travail en équipe, les sentiments de devoir envers le groupe sont très positifs et m'ont permis d'avancer même quand il m'est arrivé de craquer un peu après de longues sessions de travail. C'est cette dernière partie de l'expérience qu'est le projet qui me sera sans doute la plus bénéfique pour le futur et que j'ai le plus appréciée jusqu'à maintenant. 
+</p>
 
   </div>
 </div>
