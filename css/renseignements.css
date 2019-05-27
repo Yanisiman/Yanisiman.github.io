@@ -1,0 +1,22 @@
+body
+{
+	background: url("images/fond_site.jpg") scroll ;
+}
+
+#passions
+{
+	word-wrap: break-word;
+}
+
+.tableau
+{
+	border-bottom: 3px double;
+	margin-bottom: 5px;
+}
+
+form
+{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
