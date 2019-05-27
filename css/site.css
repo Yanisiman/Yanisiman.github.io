@@ -145,6 +145,13 @@ hr#solo{
 	padding-top:40px;
 }
 
+.content-small{
+	width:900px;
+	margin:auto;
+	margin-bottom:20px;
+	padding-top:40px;
+}
+
 .content#home{text-align:center}
 
 #welcome{text-align:center}
