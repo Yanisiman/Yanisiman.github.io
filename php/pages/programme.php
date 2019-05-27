@@ -361,6 +361,32 @@
 		<img src="../../images/maj/lit.PNG">
 		<img src="../../images/maj/etabli.PNG">
 	</div>
+
+	<a id="3s"><h1>Troisième soutenance (06/05/19)</h1></a>
+	<hr style="width: 70%;" />
+
+	<h2>Génération du monde</h2>
+	<div class="maj">
+		<img src="../../images/maj/map.PNG">	
+	</div>
+
+	<h2>Interfaces</h2>
+	<div class="maj">
+		<img src="../../images/maj/action.PNG">		
+		<img src="../../images/maj/action1.PNG">				
+		<img src="../../images/maj/build.PNG">
+		<img src="../../images/maj/channel.PNG">
+	</div>
+
+	<h2>Modèles</h2>
+	<div class="maj">
+		<img src="../../images/maj/bat.png">
+		<img src="../../images/maj/bat3.png">
+		<img src="../../images/maj/bat4.png">
+		<img src="../../images/maj/bat5.png">
+		<img src="../../images/maj/zombie.png">
+	</div>
+
 	</div>
 
 </div><!-- end of body-->
