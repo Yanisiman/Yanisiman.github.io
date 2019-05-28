@@ -39,18 +39,18 @@
 			<tr>
 				<td>Génération procédurale</td>
 				<td>Tanguy</td>
-				<td>Marc</td>
+				<td>Marc-Emmanuel</td>
 			</tr>
 
 			<tr>
 				<td>Pathfinding</td>
 				<td>Tanguy</td>
-				<td>Marc</td>
+				<td>Marc-Emmanuel</td>
 			</tr>
 
 			<tr>
 				<td>IA</td>
-				<td>Marc</td>
+				<td>Marc-Emmanuel</td>
 				<td>Jordan</td>
 			</tr>
 
@@ -74,13 +74,13 @@
 
 			<tr>
 				<td>Textures</td>
-				<td>Marc</td>
+				<td>Marc-Emmanuel</td>
 				<td>Jordan</td>
 			</tr>
 
 			<tr>
 				<td>Modèle & Animations</td>
-				<td>Marc</td>
+				<td>Marc-Emmanuel</td>
 				<td>Jordan</td>
 			</tr>
 
