@@ -96,6 +96,22 @@ Pour fini, j’ai implémenté un système de construction ou les joueurs peuven
 	<p><em>A faire : </em>	Aussi, pour la prochaine soutenance, je finirai le système de santé en ajoutant les notions de maladie et de température et la possibilité de soigner les blessures ainsi qu’un système de connaissance.</p>
 	</div>
 
+	<h3>Troisième soutenance</h3>
+	<div class="paragraph">
+		<p>
+			Pour la troisième soutenance, la génération du monde fut finalisée par une optimisation générale du processus, principalement lors de la génération de la fôret, des routes et des bâtiments. La génération du monde et des villes étant donc finie, il ne restait plus qu'à utiliser le système de placement de "Props" créé pour la deuxième soutenance. On a alors pu meubler les bâtiments sans toucher au code. Ce système de placement a été amélioré par l'ajout de la notion du "PropMarkerMaster" qui permet de regrouper plusieurs emplacements de meubles sous une même condition de génération. Par exemple, le placement d'une commode dans un appartement ne dépend ni n'influe sur les autres meubles de l'appartement, maintenant imaginons qu'on veuille rendre certains appartements plus intéressants en faisant apparaître ce qui pourrait ressembler à un camp abandonné de survivants, on peut alors utiliser ce système de "PropMarkerMaster" pour rassembler des "Props" liés exclusivement à ce camp comme un feu de camp, des matelas, des caisses, des bidons remplis d'eau et même des zombies. Ces "Props" ne peuvent apparaître que si le camp apparaît. Ce nouveau système permet donc de créer des ambiances et des environnements plus intéressants, le monde semblant alors vivant.
+		</p>
+
+		<p>
+			Pour cette soutenance finale, j'ai amélioré la visibilité des actions dans le menu d'actions décrit par Yanis dans la partie précédente. J'ai donc rajouté des noms d'actions dynamiques directement influencées par la spécificité d'une action par exemple le nom de l'action de l'attaque d'un personnage avec un marteau n'est plus "Attack Melee 1" (Attaque de mêlée 1) mais "Hit with SledgeHammer" (Frapper avec un marteau), le nom s'adapte ici en fonction du type de dégât de l'arme et son nom. L'apparition des actions dans la liste est aussi dynamique, prenons en exemple l'action de mettre un bandage. Si le personnage ne saigne pas, l'action n'apparaît pas dans la liste d'action, sinon l'action apparaît mais est grisée si le personnage n'a pas de bandage. Ces changements permettent d'augmenter la visibilité du joueur vis-à-vis de la liste des actions, bien que petits ils font partie de l'opération de polissage effectuée pour la soutenance finale.		
+		</p>
+
+		<p>
+			Je me suis aussi occupé d'implémenter différents systèmes dans le jeu tels que le temps d'action à attendre avant de pouvoir effectuer une action. Ce temps est spécifique à chaque type d'action. J'ai aussi ajouté un système de progression, d'expérience, un système de santé et de température, un système de construction, de destruction et de recyclage, un système de porte. Enfin j'ai implémenté l'agriculture et amélioré le système d'artisanat.
+		</p>
+
+	</div>
+
 	<h2>Ce que ce projet m'a apporté</h2>
 	<hr/>
 	<p>L'expérience du projet jusqu'à présent a pour moi été utile et révélatrice sur plusieurs plans. Tout d'abord sur le plan de la programmation j'ai pu grandement m'améliorer et me familiariser avec les codes à respecter pour travailler en équipe. Le fait d'apprendre en autodidacte à utiliser Unity m'a aussi permis de changer mes méthodes d'apprentissage, une rigueur plus importante étant nécessaire. Sur le plan du travail d'équipe, ayant été désigné chef de projet, j'ai pu expérimenter les meilleurs moyens de répartir le travail au sein du groupe et de garder ce dernier soudé et motivé, expérience et pratiques qui me seront à coup sûr utiles dans le futur.</p>
@@ -140,6 +156,33 @@ Pour fini, j’ai implémenté un système de construction ou les joueurs peuven
 		<em>A faire : </em>Ce que je dois implémenter pour les prochaines soutenances sont un canal de communication pour que les joueurs puissent discuter entre eux et polir les différentes interfaces utilisateurs pour en avoir un meilleur rendu. Pour le site Web il faudra continuer à le mettre à jour avec les différentes informations que nous pouvons lui apporter et finaliser les éléments liés à la base de données.
 	</p>
 </div>
+
+	<h2>Troisième soutenance</h2>
+	<div class="paragraph">
+		<p>
+			Pour la troisième soutenance, je me suis occupé de faire un système de communications entre joueurs lors de la partie. Ce système de communication permet donc d'envoyer des messages soit aux joueurs de son équipe, soit à tous les joueurs de la partie en commençant le message par "/all". Ces messages sont transmis à tous les autres joueurs grâce au serveur Photon, récupérés et affichés dans l'espace de communication.
+
+			Pour cette dernière soutenance le but principal au niveau des menus et interfaces utilisateurs était de peaufiner le rendu visuel pour avoir quelque chose de plus attirant visuellement.
+
+		</p>
+		<p> 
+			Je me suis donc occupé d'améliorer les polices d'écritures, les couleurs et les formes des différents éléments de menus ou d'interfaces utilisateurs. J'ai aussi implémenté de nouveaux éléments de menus comme les options qui sont maintenant disponibles à partir du menu de pause dans lequel on peut ainsi attribuer des touches pour différentes actions, par exemple pour se déplacer, pour faire apparaître les interfaces du joueur ou le mode construction. Si le joueur est dans le mode "Solo", alors avant de lancer la partie il aura la possibilité d'appuyer sur un bouton pour charger une sauvegarde antérieur et au moment de quitter la partie il aura la possibilité entre deux boutons, un pour sauvegarder sa partie et un pour quitter complètement le jeu. Du côté des interfaces utilisateurs j'ai amélioré le système d'interaction du personnage avec d'autres personnages ou avec des objets. Maintenant lorsque le joueur clique, en ayant au moins un personnage sélectionné, sur un objet ou un autre personnage, une liste d'actions sous formes de boutons apparaît au-dessus de la tête du personnage. Ensuite avec l'implémentation d'un canal de communication j'ai ajouté une boîte de dialogue dans laquelle se trouve un champ pour écrire le message, un bouton pour envoyer le message et un champ dans lequel tous les messages sont affichés. De plus, j'ai ajouté un guide d'apprentissage dans le mode "Solo" qui donc fait apparaître des messages à l'écran au moment où certaines actions sont faites avec des messages adaptés à ces moments.
+		</p>
+
+		<p>
+			Pour la troisième soutenance, je me suis occupé de toute la partie "Solo" du jeu: j'ai donc du intégrer tous les éléments mis en oeuvre dans le multijoueur mais sans utiliser de réseau. J'ai donc adapter les différentes fonctions mises en places utilisant du réseau pour pouvoir se jouer de façon hors-ligne.
+		</p>
+		<p>
+			J'ai aussi implémenté un système de sauvegarde dans le mode "Solo". Le joueur peut donc décider au moment de choisir le mode de jeu de reprendre au niveau d'une ancienne sauvegarde ou de repartir de zéro et lorsqu'il décide de quitter le jeu il peut choisir de sauvegarder sa partie ou bien de quitter complètement. Ce système de sauvegarde garde en mémoire toutes les caractéristiques des différents personnages contrôlés par le joueur au moment où celui-ci a sauvegardé la partie. Ses caractéristiques sont : son nom, ses traits de caractères, ses compétences et statistiques mais aussi son inventaire, ses équipements et sa santé.
+		</p>
+
+		<p>
+			Encore dans le mode "Solo" j'ai mis en place un petit guide d'apprentissage pour le joueur qui au lancement du jeu pourra voir des messages lui indiquant les principales fonctionnalités qui sont disponibles dans le jeu et les manières de les effectuer. Il aura ainsi la possibilité de comprendre comment rentrer dans le jeu, se déplacer, zoomer, faire apparaître des personnages, etc.
+		</p>
+
+	</div>
+
+
 	<h2>Ce que ce projet m'a apporté</h2>
 	<hr/>
 	<p>Après 6 mois de travail acharné sur ce projet, je peux dire que celui-ci m'a apporté de nombreuses choses. En effet il m'a permis de travailler sur le coté programmation et de m'améliorer dans ce domaine mais aussi de me familiariser avec de nouveaux éléments tel qu'Unity ou encore du côté du site Web.
@@ -194,6 +237,21 @@ Pour la suite de la conception des intelligences artificielles il faudra créer 
 	</p>
 </div>
 
+	<h2>Troisième soutenance</h2>
+	<div class="paragraph">
+		<p>
+			Pour cette troisième soutenance, j’ai amélioré la conception du rat qui fuit les personnageslorsqu’ils s’approchent trop près. Si les personnages arrivent à le coincer, ils peuvent le capturerpour avoir de la viande. J’ai aussi implémenté une intelligence artificielle de personnage quiregroupe de nombreux éléments déjà implémentés. Cette intelligence artificielle se déplacealéatoirement, si elle a besoin de quelque chose elle se met à fouiller les bâtiments à la recherchegénéralement de nourriture ou de bandage, quand elle est blessée ou a faim elle utilise cesobjets. Elle récupère aussi des matériaux nécessaires à la construction d’un lit afin de pouvoirse reposer quand elle est fatiguée. A l’approche d’autres personnages, elle fuit de la mêmefaçon qu’un rat si elle ne possède pas d’armes sinon elle ne change pas son comportementhabituel. Si elle est attaquée par un personnage et qu’elle possède une arme elle attaque enretour sinon elle fuit. Elle fuit aussi automatiquement lorsqu’elle se trouve proche de zombies.Finalement, les personnages peuvent la convaincre de rejoindre leur équipe en utilisant leursvaleurs de Social. L’implémentation de cette intelligence artificielle a été vitale afin de rendrele monde vivant.
+		</p>
+
+		<p>
+			M'occupant déjà des sons et de l'artificielle intelligence, j'ai implémenté pour la troisième soutenance un système de visualisation des sons, de plus les zombies sont alertés par le son. Lorsqu'un son est détecté par un zombie, le zombie retient le niveau sonore du son qu'il a entendu, le joueur peut alors détourner son attention en créant du bruit avec un niveau sonore plus élevé que celui que le zombie a entendu (ou en apparaissant dans son champ de vision). Les sons passent à travers les murs, ils sont donc un élément primordial de jeu lorsque les zombies sont présents.
+		</p>
+
+		<p>
+			J'ai aussi rajouté un système de saison et de météo. Il peut faire beau, pleuvoir et même neiger. Lorsqu'il a neigé le sol se recouvre de blanc, simulant une couche de neige qui se serait déposée. La pluie et la neige utilise le système de particule d'Unity, j'ai du alors adapté ce système et créé le système qui décide de la météo. La neige au sol fut plus compliquée à implémenté car n'utilisant aucune fonctionnalité d'Unity vu jusque là, le rendu est tout de même très acceptable.
+		</p>
+	</div>
+	
 	<h2>Ce que ce projet m'a apporté</h2>
 	<hr/>
 	<p>En travaillant sur ce projet, j'ai pu apprendre beaucoup de nouvelles choses. Tout d'abord de nouvelle notions de programmation en C\# mais aussi de développement web, notamment en CSS avec la réalisation de site adaptatif. Depuis ma première expérience de création de jeu sur Pygame en ISN, j'ai toujours voulu utiliser un moteur de jeu tel que Unity pour explorer et utiliser toutes ses fonctionnalités que Pygame ne possède pas. Travailler en groupe de quatre m'a également beaucoup appris. En effet, c'est très différent que de travailler en groupe de deux comme j'ai pu le faire en ISN. Grâce à cela, j'ai pu me rendre compte de l'importance de la répartition des tâches et de la communication dans un groupe.</p>
@@ -247,6 +305,25 @@ L'animation n'a pas beaucoup évoluée entre cette première et seconde soutenan
 
 <p>Au niveau des animations il va falloir incorporer celles des personnages non joueurs hostiles tels que les zombies et aussi celles nécessaires pour les actions de construction ou de combat (ex : avoir une animation pour les différents coups des personnages ou encore des animations de mort).</p>
 </div>
+
+	<h2>Troisième soutenance</h2>
+	<div class="paragraph">
+		<ul>
+			<li>Textures : </li>
+			<p>Pour finaliser le projet qu'est TotA au niveau des textures il a d'abord fallu finir toutes les icônes représentant les différents objets trouvables en jeu, le style cubique des ces icônes a été maintenu et on peut maintenant facilement identifier les armes, les objets nécessaires à la construction ou encore les meubles constructibles.</p>
+			<p>La seconde tâche nécessaire pour finir les textures du jeu a été de faire le rendu visuel des menus à savoir les boutons et zones de sélection étant donné que le fond avait déjà été fait et des interfaces trouvables en jeu comme l'inventaire, le menu de construction et les zones où l'on trouve les statistiques des personnages. C'est un des seuls éléments du jeu qui ne suis pas complètement le style cubique voulu mais là encore c'est justifié par le besoin de clarté dans les interfaces et surtout la volonté de faire une distinction claire entre le jeu en lui-même et les interfaces.</p>
+
+			<li>Modèles :</li>
+			<p>Le travail sur les modèles du jeu s'est fait dans la continuité de ce qui avait été fait pour la première et la deuxième soutenance, il a fallu garder le même rythme de travail pour finir ce qui avait été déjà bien entamé.</p>
+			<p>Au niveau modèles nécessaires à la conception des villes j'ai pu terminer les quinze bâtiments différents voulus pour le jeu. Ce nombre n'est cependant pas très représentatif étant donné que chaque chose désignée comme bâtiment n'est en fait qu'un modèle générique avec le découpage des pièces, des escaliers et de quelques éléments dont l'interaction n'est pas possible dans le jeu final comme des sonnettes à l'entrée des immeubles qui seraient hors service dans le cadre d'une apocalypse. le vrai nombre de bâtiments en jeu, si l'on ne compte pas les différents meubles qu'ils peuvent abriter approche plus de la cinquantaine étant donné que différentes versions détaillées, trois en général, de chaque étage de chaque bâtiment créé existent et permettent une diversité dans le jeu. Les détails n'ont pas été modifiés en vue de la dernière soutenance et les bâtiments se démarquent souvent par l'usure de leurs pièces et leur destruction partielle voir totale. J'ai ensuite fait pour chaque plusieurs versions des différents étages des bâtiments, ajoutant des détails comme de la salissure ou encore des effondrements de façade.</p>
+			<p>Enfin la liste des modèles de meubles et autres éléments avec lesquels on peut interagir voulue pour le jeu a été terminée, ce qui correspond à tous les meubles de vie classiques que l'on peut trouver dans une maison comme les tables, chaises ou lit et ainsi de suite mais aussi nos établis, des objets de lieux publics comme des bancs, des voitures ou des poubelles et enfin les objets qui servent au système électrique du jeu. Le placement de ces objets en jeu dans les différents bâtiments a lui aussi été fait, suivant la méthode programmée pour la deuxième soutenance. Ainsi ceux-ci apparaissent à des endroits prédéfinis avec une certaine probabilité ce qui ajoute encore de la diversité à l'univers de jeu.</p>
+
+			<li>Animations : </li>
+			<p>Aspect visuel majeur du jeu, l'animation des personnages et des objets a elle aussi été finalisée, dorénavant on peut par exemple ouvrir les portes et les personnages avancent et agissent selon nos propres animations, entre autre pour la marche et l'orientation ou encore la mort de ceux-ci.</p>
+
+		</ul>
+	</div>
+
 
 	<h2>Ce que ce projet m'a apporté</h2>
 	<hr/>
