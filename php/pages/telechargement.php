@@ -25,12 +25,13 @@
 	<a href=#>Dossier d'exploitation</a>
 
 	<h2>Cahier des Charges</h2>
-	<a href="../liens/Cahier.pdf">Cahier des Charges</a>
+	<a href="../../liens/Cahier.pdf">Cahier des Charges</a>
 
 	<h2>Rapport de soutenance</h2>
 	<ul>
-		<li><a href="../liens/Rapport1.pdf">Rapport de soutenance 1</a></li>
-		<li><a href="../liens/Rapport2.pdf">Rapport de soutenance 2</a></li>
+		<li><a href="../../liens/Rapport1.pdf">Rapport de soutenance 1</a></li>
+		<li><a href="../../liens/Rapport2.pdf">Rapport de soutenance 2</a></li>
+		<li><a href="../../liens/TotA_final.pdf">Rapport de soutenance final</a></li>
 	</ul>	
 
 	<h2>Version Lite du jeu</h2>
