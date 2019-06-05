@@ -1,15 +1,50 @@
-#section{
+#section
+{
+	display: flex;
+	justify-content: space-around;
+	/*flex-wrap: wrap;*/
+	/*background : rgba(200, 202, 209,0.8);*/
+	/*color: firebrick;*/
 	float:left;
 	position:fixed;
 	left:5px;
 	width:200px;
-	border:2px solid red;
+}
+#chat
+{
+	display: flex;
+	flex-direction: column;
+}
+.chat
+{
+	display: block;
+	border: 3px double black;
+	border-radius: 5px 5px 5px 5px;
+	word-wrap: break-word;
+	margin: 10px;
+	padding: 10px;
+	
 }
 
-#formulaire{
-	float:left;
-	position:fixed;
-	left:5px;
-	width:200px;
-	border:2px solid red;
+
+#formulaire
+{
+	width: 500px;
+	align-self: center;
+	
+}
+
+table
+{
+	border-collapse: collapse;
+	margin-bottom: 10px;
+
+	
+}
+
+td
+{
+	border: 3.4px double black;
+	padding: 10px;
+
 }
