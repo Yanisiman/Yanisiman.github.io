@@ -1,12 +1,10 @@
-
 #section
 {
 	display: flex;
 	justify-content: space-around;
 	/*flex-wrap: wrap;*/
-	background : rgba(200, 202, 209,0.8);
-	border: 5px double blue;
-	color: firebrick;
+	/*background : rgba(200, 202, 209,0.8);*/
+	/*color: firebrick;*/
 	float:left;
 	position:fixed;
 	left:5px;
@@ -20,15 +18,11 @@
 .chat
 {
 	display: block;
-	width: 350px;
-	height: 55px;
-	font-size: 1.1em;
-	border: 5px double black;
+	border: 3px double black;
 	border-radius: 5px 5px 5px 5px;
 	word-wrap: break-word;
 	margin: 10px;
-	padding-left: 10px;
-	padding-top: 5px;
+	padding: 10px;
 	
 }
 
